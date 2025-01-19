@@ -1,0 +1,118 @@
+body
+{
+  color:black;
+  font-family:Helvetica;
+}
+
+form {
+  text-align: center; 
+}
+#wrapper
+{
+  width:960px;
+  height:600px;
+  margin:0 auto; 
+  /*this centres the wrapper*/
+}
+#header
+{
+  width:100%;
+  height:15%;
+  background-color:#999;
+  opacity:.5;
+
+}
+#sidebar
+{
+  width:15%;
+  height:85%;
+  background-color:#666;
+  float:left;
+}
+#main
+{
+  background-image:url("doghousebg.jpg");
+  background-size: contain;
+  background-repeat:no-repeat;
+  width:85%;
+  height:85%;
+  float:right;
+}
+/*mise en forme de liens.
+Les pseudo-classes permettent de mettre en forme efficacement les états des liens.
+Cet ordre est important parce que les styles de liens se construisent les uns par dessus les autres ; 
+par exemple, les styles de la première règle s'appliqueront à toutes les suivantes, et lorsqu'un lien est activé, il est également survolé.
+Si vous les mettez dans le mauvais ordre, les choses ne fonctionneront pas correctement.*/
+
+a:link{color:white;text-decoration:none;}
+/*l'état par défaut dans lequel se trouve un lien, lorsqu'il n'est dans aucun autre état ; cela peut être spécifiquement mis en forme en utilisant la pseudo classe :link*/
+a:visited{color:yellow;text-decoration:none;}
+/*un lien qui a déjà été visité (qui existe dans l'historique du navigateur), mis en forme en utilisant la pseudo-classe :visited*/
+a:hover{color:white;text-decoration:underline;}
+/*hover : un lien qui est survolé par le pointeur de la souris de l'utilisateur, mis en forme en utilisant la pseudo classe :hover*/
+a:active{color:orange;text-decoration:underline;}
+/*active : un lien en cours d'activation (par exemple, lorsqu'on clique dessus), mis en forme en utilisant la pseudo classe :active.*/
+
+a{
+  display:block;
+  font-size:100%;
+}
+.dog
+{
+  float:left;
+}
+h1,img,a,p
+{
+  padding:15px;
+}
+#carte_google
+{
+  width: 85%;
+  height: 85%;
+  margin: auto;
+  text-indent: 0px; 
+
+}      
+iframe /* centrage plan google*/
+{
+  width: 85%;
+  height: 85%;
+  margin: auto;
+
+}
+
+#clock
+{
+  text-align: center; 
+}
+
+/*calendrier*/
+.cal_calendrier
+{
+  border:1px solid black;
+  padding:1px;
+  background-color:#FFFFFF;
+  width:250px;
+  margin:auto;
+  height:200px;
+
+}
+.cal_calendrier th
+{
+  border:1px solid black;
+  background-color:#ffffff;
+}
+.cal_calendrier td
+{
+  border:1px solid black;
+  background-color:#FFFFFF;
+  text-align:center;
+}
+.cal_aujourdhui
+{
+  color:#ff0000;
+}
+.cal_jours_av_ap
+{
+  color:#5a779e;
+}
